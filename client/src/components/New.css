@@ -1,0 +1,65 @@
+.new-page {
+  display: flex;
+  justify-content: center;
+  
+  margin: 50px 0px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #dddddd;
+  min-width: 400px;
+}
+
+#name-label, #amount-label, #type-label, #date-label {
+  display: flex;
+  flex-direction: column;
+}
+
+#form label {
+  width: 30%;
+  min-width: 350px;
+  margin: 15px 0px;
+}
+
+#name, #amount, #date, #transactionType {
+  margin-top: 5px;
+  min-height: 2rem;
+  background-color: #eeeeee;
+  color: #777777;
+  border-radius: 3px;
+  border: none;
+}
+
+#submit {
+  margin: 15px;
+  min-height: 2.5rem;
+  min-width: 10rem;
+
+  background-color: #43014b;
+  color: #dddddd;
+}
+
+.transparent {
+  margin: 0;
+  opacity: 0;
+}
+
+.success-message {
+  margin-left: 20px;
+  color: #6aa84f;
+  animation: fadeInOut 2s linear forwards;
+}
+
+.error-message {
+  color: #cc0000;
+  animation: fadeInOut 2s linear forwards;
+}
+
+@keyframes fadeInOut {
+  0%, 100% { opacity: 0 }
+  10%, 90% { opacity: 1 }
+}
